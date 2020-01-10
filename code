@@ -1,0 +1,11 @@
+function differentSymbolsNaive(s) {
+    //counts the number of alphabet occurence
+    let count = 0;
+    //loop removes every single occurence of a single alphabet
+    while(s.length != 0){
+        let a = new RegExp(s[0],'g');
+        s=s.replace(a,'');
+        count++;
+    }
+    return count;
+}
